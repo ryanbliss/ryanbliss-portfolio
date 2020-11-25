@@ -1,4 +1,4 @@
-# studiobliss-website
+# Ryan Bliss Portfolio Website
 
 ## Project setup
 ```
