@@ -95,7 +95,7 @@ export default {
       color: $white;
       font-weight: 700;
       font-size: 1.25vw;
-      width: 37.2vw;
+      width: 32.2vw;
     }
   }
 }

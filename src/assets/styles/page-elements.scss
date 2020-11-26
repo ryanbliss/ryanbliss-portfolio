@@ -1,6 +1,31 @@
 .paragraph-content {
   font-family: 'Nunito Sans', sans-serif;
 }
+.page-section {
+  margin-left: 9.7vw;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  margin-right: 9.7vw;
+  text-align: left;
+  .title {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 106px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $brand-primary;
+  }
+  .intro-text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    color: $black;
+    max-width: 551px;
+  }
+}
 
 .divider {
   background-color: #F0F0F0;
