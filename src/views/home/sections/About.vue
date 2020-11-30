@@ -8,10 +8,23 @@
         {{ header.body }}
       </div>
     </div>
+    <div class="flex wrap">
+      <TagList
+        title="Languages & Frameworks"
+        type="CODE"
+      />
+      <TagList
+        title="UX Tools"
+        type="UX"
+      />
+      <div class="spacer" />
+    </div>
   </div>
 </template>
 
 <script>
+import TagList from '@/components/tags/tag-list/TagList.vue';
+
 export default {
   name: 'AboutMe',
   data() {
@@ -21,6 +34,9 @@ export default {
         body: 'Having built, designed, and managed over a dozen mobile / web applications, Ryan knows what it takes to build modern applications driven by user feedback.',
       },
     };
+  },
+  components: {
+    TagList,
   },
 };
 </script>
