@@ -17,13 +17,18 @@
         title="UX Tools"
         type="UX"
       />
-      <div class="spacer" />
+    </div>
+    <div class="flex">
+      <PortfolioList
+        title="Recent Work"
+      />
     </div>
   </div>
 </template>
 
 <script>
 import TagList from '@/components/tags/tag-list/TagList.vue';
+import PortfolioList from '@/components/portfolio/portfolio-list/PortfolioList.vue';
 
 export default {
   name: 'AboutMe',
@@ -37,6 +42,7 @@ export default {
   },
   components: {
     TagList,
+    PortfolioList,
   },
 };
 </script>

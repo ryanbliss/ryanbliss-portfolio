@@ -1,5 +1,5 @@
 <template>
-  <div class="tag-chip paragraph-content">
+  <div class="tag-chip paragraph-content noselect">
     <div>{{ name }}</div>
   </div>
 </template>

@@ -53,7 +53,6 @@ export default {
 
   max-width: 486px;
   margin-right: 48px;
-  margin-top: 48px;
   &:last-of-type {
     margin-right: 0px;
   }
