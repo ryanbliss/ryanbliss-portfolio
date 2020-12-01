@@ -1,6 +1,7 @@
 /* eslint-disable global-require */
 import PortfolioItem from '@/models/portfolio/portfolio-item';
 import getCorzoHtml from '@/assets/portfolio/corzo/corzo-html';
+import getPollenWiseHtml from '@/assets/portfolio/pollen-wise/pollen-wise-html';
 
 export default {
   namespaced: true,
@@ -25,16 +26,16 @@ export default {
       new PortfolioItem({
         id: 'pollenwise',
         name: 'Pollen Wise',
-        description: 'Designed and developed the Corzo web app, Chrome extension, and several Node.js microservices.',
-        imagePath: require('@/assets/portfolio/corzo/corzo-feature-image.png'),
-        html: getCorzoHtml(),
+        description: 'Designed and developed Pollen Wise -- the popular iOS and Android app. Led usability studies & user interviews.',
+        imagePath: require('@/assets/portfolio/pollen-wise/pollen-wise-feature-image.png'),
+        html: getPollenWiseHtml(),
         tagNames: [
           'Flutter',
           'Dart',
           'Figma',
           'Custom Built',
         ],
-        website: 'https://www.corzo.io',
+        website: 'https://www.pollenwise.com',
       }),
     ],
   },
