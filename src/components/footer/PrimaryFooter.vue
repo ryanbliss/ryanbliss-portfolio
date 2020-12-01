@@ -65,7 +65,7 @@ export default {
       return new Date().getFullYear();
     },
     copyrightText() {
-      return `© ${this.currentYear} Ryan Bliss.`;
+      return `© ${this.currentYear} Ryan Bliss • Developed Using Vue.js.`;
     },
   },
   components: {
