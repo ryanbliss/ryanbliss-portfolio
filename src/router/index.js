@@ -12,12 +12,12 @@ const routes = [
     component: Home,
   },
   {
-    path: '/portfolio/item/:itemid',
+    path: '/portfolio/:itemid',
     name: 'PortfolioItemInfo',
     component: PortfolioItemInfo,
   },
   {
-    path: '/admin/portfolio/item/:itemid',
+    path: '/admin/portfolio/:itemid',
     name: 'PortfolioItemInfoAdmin',
     component: PortfolioItemInfo,
   },

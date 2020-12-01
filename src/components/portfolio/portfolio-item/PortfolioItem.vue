@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     onPressLearnMore() {
-      this.$router.push(`/portfolio/item/${this.item.id}`);
+      this.$router.push(`/portfolio/${this.item.id}`);
     },
   },
   components: {
