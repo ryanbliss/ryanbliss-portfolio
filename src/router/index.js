@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/home/Home.vue';
 import PortfolioItemInfo from '../views/portfolio-item-info/PortfolioItemInfo.vue';
+import Portfolio from '../views/portfolio/Portfolio.vue';
 
 Vue.use(VueRouter);
 
@@ -20,6 +21,11 @@ const routes = [
     path: '/admin/portfolio/:itemid',
     name: 'PortfolioItemInfoAdmin',
     component: PortfolioItemInfo,
+  },
+  {
+    path: '/portfolio',
+    name: 'Portfolio',
+    component: Portfolio,
   },
 ];
 

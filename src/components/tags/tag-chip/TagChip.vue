@@ -1,7 +1,9 @@
 <template>
-  <div class="tag-chip paragraph-content noselect">
+  <a :class="className"
+    @click="search"
+  >
     <div>{{ name }}</div>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -11,6 +13,28 @@ export default {
     name: {
       type: String,
       required: true,
+    },
+  },
+  computed: {
+    routeTagName() {
+      return this.$store.state.route.tagName || null;
+    },
+    isSelected() {
+      return this.routeTagName === this.name;
+    },
+    className() {
+      if (this.isSelected) {
+        return 'tag-chip paragraph-content selected noselect';
+      }
+      return 'tag-chip paragraph-content noselect';
+    },
+  },
+  methods: {
+    search() {
+      this.$router.push({
+        path: '/portfolio',
+        query: { tagname: this.name },
+      });
     },
   },
 };
@@ -30,6 +54,11 @@ export default {
   &:hover {
     border: 1px solid $brand-primary;
     color: $brand-primary;
+  }
+  &.selected {
+    border: 1px solid transparent;
+    color: $white;
+    background-color: $brand-primary;
   }
 
   @include mobile {

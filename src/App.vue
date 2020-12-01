@@ -28,10 +28,11 @@ export default {
     },
   },
   methods: {
-    ...mapMutations('route', ['setPath', 'setParams']),
+    ...mapMutations('route', ['setPath', 'setParams', 'setQuery']),
     updateRouteData() {
       this.setPath(this.$router.currentRoute.path);
       this.setParams(this.$router.currentRoute.params);
+      this.setQuery(this.$router.currentRoute.query);
     },
   },
 };

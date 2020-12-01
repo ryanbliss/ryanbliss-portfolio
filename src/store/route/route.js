@@ -6,6 +6,7 @@ export default {
   state: {
     path: '/',
     portfolioItemId: null,
+    tagName: null,
   },
   mutations: {
     setPath(state, path) {
@@ -13,6 +14,9 @@ export default {
     },
     setParams(state, params) {
       state.portfolioItemId = params.itemid || null;
+    },
+    setQuery(state, queries) {
+      state.tagName = queries.tagname || null;
     },
   },
 };
