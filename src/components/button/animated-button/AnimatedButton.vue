@@ -1,10 +1,12 @@
 <template>
-  <div class="animated-button-container paragraph-content">
+  <a class="animated-button-container paragraph-content"
+    @click="$emit('select')"
+  >
     <div class="animated-button-background" />
-    <a class="animated-button">
+    <div class="animated-button">
       {{ text }}
-    </a>
-  </div>
+    </div>
+  </a>
 </template>
 
 <script>

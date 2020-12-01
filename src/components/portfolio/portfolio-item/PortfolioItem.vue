@@ -15,6 +15,7 @@
       </div>
       <AnimatedButton text="Learn More"
         style="margin-left: -4px;"
+        @select="onPressLearnMore"
       />
     </div>
   </div>
@@ -29,6 +30,11 @@ export default {
     item: {
       type: Object,
       required: true,
+    },
+  },
+  methods: {
+    onPressLearnMore() {
+      this.$router.push(`/portfolio/${this.item.id}`);
     },
   },
   components: {
