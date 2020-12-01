@@ -59,6 +59,7 @@ export default {
   .preview {
     width: 374px;
     margin-left: 54px;
+    margin-top: 36px;
     align-self: flex-end;
     padding-bottom: 12px;
     .preview-title {
