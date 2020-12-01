@@ -6,12 +6,14 @@ export default class PortfolioItem {
     imagePath,
     html,
     tagNames,
+    website,
   }) {
     this.id = id;
     this.name = name;
     this.description = description;
     this.imagePath = imagePath;
-    this.htmlPath = html;
+    this.html = html;
     this.tagNames = tagNames;
+    this.website = website || null;
   }
 }

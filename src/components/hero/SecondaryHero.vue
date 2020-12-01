@@ -1,5 +1,5 @@
 <template>
-  <div class="primary-hero flex vertical"
+  <div class="secondary-hero flex vertical"
     :style="{
       backgroundImage: 'url(' + backgroundUrl + ')' ,
       backgroundSize:'cover'
@@ -23,10 +23,7 @@
     <div class="flex">
       <div class="hero-content">
         <div class="title">
-          {{ content.title }}
-        </div>
-        <div class="paragraph-content">
-          {{ content.body }}
+          {{ title }}
         </div>
       </div>
     </div>
@@ -35,18 +32,20 @@
 
 <script>
 export default {
-  name: 'PrimaryHero',
+  name: 'SecondaryHero',
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
       // eslint-disable-next-line global-require
-      backgroundUrl: require('@/assets/images/backgrounds/hero-bg.png'),
+      backgroundUrl: require('@/assets/images/backgrounds/hero-secondary-bg.png'),
       logo: {
         first: 'ryan',
         last: 'bliss',
-      },
-      content: {
-        title: 'UX + Code.',
-        body: 'If you are looking for someone with deep experience coding + designing applications, conducting user research, and making data-informed decisions, you’re looking for Ryan Bliss.',
       },
     };
   },
@@ -54,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.primary-hero {
+.secondary-hero {
   @include mobile {
     // TODO:
   }
@@ -62,7 +61,7 @@ export default {
     // TODO:
   }
   width: 100%;
-  height: 48.26vw;
+  height: 22.5vw;
 
   .logo-mark {
     padding-top: 1.38vw;
@@ -85,20 +84,13 @@ export default {
 
   .hero-content {
     margin-left: 8.88vw;
-    margin-bottom: 4.3vw;
+    margin-bottom: 1.38vw;
     font-style: normal;
     text-align: left;
     .title {
       color: $brand-secondary;
       font-weight: 900;
       font-size: 6.944vw;
-    }
-    .paragraph-content {
-      margin-left: 0.83vw;
-      color: $white;
-      font-weight: 700;
-      font-size: 1.25vw;
-      width: 32.2vw;
     }
   }
 }

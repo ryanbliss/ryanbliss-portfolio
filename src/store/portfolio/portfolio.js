@@ -7,7 +7,7 @@ export default {
   state: {
     items: [
       new PortfolioItem({
-        id: 0,
+        id: 'corzo',
         name: 'Corzo',
         description: 'Designed and developed the Corzo web app, Chrome extension, and several Node.js microservices.',
         imagePath: require('@/assets/portfolio/corzo/corzo-feature-image.png'),
@@ -20,6 +20,21 @@ export default {
           'Mixpanel',
           'Hotjar',
         ],
+        website: 'https://www.corzo.io',
+      }),
+      new PortfolioItem({
+        id: 'pollenwise',
+        name: 'Pollen Wise',
+        description: 'Designed and developed the Corzo web app, Chrome extension, and several Node.js microservices.',
+        imagePath: require('@/assets/portfolio/corzo/corzo-feature-image.png'),
+        html: getCorzoHtml(),
+        tagNames: [
+          'Flutter',
+          'Dart',
+          'Figma',
+          'Custom Built',
+        ],
+        website: 'https://www.corzo.io',
       }),
     ],
   },

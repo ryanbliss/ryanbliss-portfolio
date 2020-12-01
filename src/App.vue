@@ -1,11 +1,41 @@
 <template>
-  <div id="app" class="scroll" style="height: 100vh">
+  <div id="app">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <main>
-      <router-view/>
+      <div>
+        <router-view/>
+      </div>
     </main>
   </div>
 </template>
+
+<script>
+import { mapMutations } from 'vuex';
+
+export default {
+  name: 'App',
+  watch: {
+    $route() {
+      this.updateRouteData();
+    },
+  },
+  created() {
+    this.updateRouteData();
+  },
+  computed: {
+    path() {
+      return this.$store.state.route.path;
+    },
+  },
+  methods: {
+    ...mapMutations('route', ['setPath', 'setParams']),
+    updateRouteData() {
+      this.setPath(this.$router.currentRoute.path);
+      this.setParams(this.$router.currentRoute.params);
+    },
+  },
+};
+</script>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');

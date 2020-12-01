@@ -25,16 +25,32 @@ export default {
       type: String,
       default: null,
     },
+    /*
+      This is an optional prop that narrows down
+      the items that can be displayed. For example,
+      this is used when displaying all but the current
+      item in PortfolioItemSummary.vue.
+    */
+    doNotIncludeItemIds: {
+      type: Array,
+      required: false,
+      default: () => null,
+    },
   },
   computed: {
     ...mapGetters({
       portfolioItemsForTagName: 'portfolio/portfolioItemsForTagName',
     }),
     portfolioItems() {
-      if (this.tagNameFilter) {
-        return this.portfolioItemsForTagName(this.tagNameFilter);
+      const items = this.tagNameFilter
+        ? this.portfolioItemsForTagName(this.tagNameFilter)
+        : this.$store.state.portfolio.items;
+
+      if (this.doNotIncludeItemIds != null) {
+        return items
+          .filter((item) => !this.doNotIncludeItemIds.includes(item.id));
       }
-      return this.$store.state.portfolio.items;
+      return items;
     },
   },
   components: {

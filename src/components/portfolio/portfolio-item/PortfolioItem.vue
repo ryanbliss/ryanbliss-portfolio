@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     onPressLearnMore() {
-      this.$router.push(`/portfolio/${this.item.id}`);
+      this.$router.push(`/portfolio/item/${this.item.id}`);
     },
   },
   components: {
@@ -50,6 +50,10 @@ export default {
   }
   @include laptop {
     // TODO:
+  }
+  margin-bottom: 56px;
+  &:last-of-type {
+    margin-bottom: 0px;
   }
 
   .image {

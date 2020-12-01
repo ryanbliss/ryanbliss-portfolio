@@ -1,5 +1,5 @@
 <template>
-  <a class="icon-link-button-container flex center-cross"
+  <a :class="themedClassName"
     :href="link"
     target="_blank"
   >
@@ -28,6 +28,18 @@ export default {
       type: String,
       required: true,
     },
+    theme: {
+      type: String,
+      default: 'on-dark',
+      validator(value) {
+        return ['on-dark', 'on-light'].includes(value);
+      },
+    },
+  },
+  computed: {
+    themedClassName() {
+      return `icon-link-button-container ${this.theme} flex center-cross`;
+    },
   },
 };
 </script>
@@ -49,6 +61,24 @@ export default {
   &:hover {
     .button-text {
       text-decoration-line: underline;
+    }
+  }
+
+  &.on-dark {
+    .button-text {
+      color: $white;
+    }
+  }
+  &.on-light {
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+    }
+    .button-text {
+      margin-top: 2px;
+      font-size: 18px;
+      color: $brand-primary;
     }
   }
 }

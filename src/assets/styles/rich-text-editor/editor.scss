@@ -1,0 +1,368 @@
+.rich-text-block {
+  width: 100%;
+}
+.editor *.is-empty:nth-child(1)::before,
+.editor *.is-empty:nth-child(2)::before {
+  content: attr(data-empty-text);
+  float: left;
+  color: #aaa;
+  pointer-events: none;
+  height: 0;
+  color: #9B9B9B;
+  font-weight: 500;
+}
+
+.editor *.active-empty::before {
+  content: attr(data-empty-text);
+  float: left;
+  color: #aaa;
+  pointer-events: none;
+  height: 0;
+  color: #9B9B9B;
+  font-weight: 400;
+}
+
+.editor {
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  text-align: left;
+  &__content {
+    padding-top: 12px;
+    padding-bottom: 56px;
+    word-wrap: break-word;
+
+    * {
+      caret-color: $black;
+    }
+
+    pre {
+      padding: 0.7rem 1rem;
+      border-radius: 5px;
+      background: $black;
+      color: $white;
+      font-size: 0.8rem;
+      overflow-x: auto;
+
+      code {
+        display: block;
+      }
+    }
+
+    p code {
+      display: inline-block;
+      padding: 0 0.4rem;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      background: rgba($black, 0.1);
+      color: rgba($black, 0.8);
+    }
+
+    .w-richtext ol, .w-richtext ul {
+      overflow: visible !important;
+    }
+
+    ul {
+      list-style-type: disc;
+      overflow: visible !important;
+    }
+
+    ul,
+    ol {
+      padding-left: 1rem;
+    }
+
+    li > ol,
+    li > ul {
+      margin: 0 !important;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 3px;
+    }
+
+    table {
+      border-collapse: collapse;
+      table-layout: fixed;
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+
+      td, th {
+        min-width: 1em;
+        border: 2px solid grey;
+        padding: 3px 5px;
+        vertical-align: top;
+        box-sizing: border-box;
+        position: relative;
+        > * {
+          margin-bottom: 0;
+        }
+      }
+
+      th {
+        font-weight: bold;
+        text-align: left;
+      }
+
+      .selectedCell:after {
+        z-index: 2;
+        position: absolute;
+        content: "";
+        left: 0; right: 0; top: 0; bottom: 0;
+        background: rgba(200, 200, 255, 0.4);
+        pointer-events: none;
+      }
+
+      .column-resize-handle {
+        position: absolute;
+        right: -2px; top: 0; bottom: 0;
+        width: 4px;
+        z-index: 20;
+        background-color: #adf;
+        pointer-events: none;
+      }
+    }
+
+    .tableWrapper {
+      margin: 1em 0;
+      overflow-x: auto;
+    }
+
+    .resize-cursor {
+      cursor: ew-resize;
+      cursor: col-resize;
+    }
+
+  }
+
+  .ProseMirror-focused {
+    outline: none !important;
+  }
+  
+  h1 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 42px;
+    border: none;
+    resize: none;
+    width: 100%;
+    color: $brand-primary;
+  }
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: $black;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+
+  h3 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000;
+  }
+  p {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 400;
+    color: $black;
+    font-size: 16px;
+    line-height: 140%;
+    a {
+      color: $brand-primary;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+  &.two-point-zero-spaced {
+    p {
+      margin-top: 20px;
+      margin-bottom: 24px;
+    }
+    & > * {
+      li > p {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+        margin: 0px !important;
+      }
+    }
+  }
+  &.one-point-five-spaced {
+    p {
+      margin-top: 15px;
+      margin-bottom: 18px;
+    }
+    & > * {
+      li > p {
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+        margin: 0px !important;
+      }
+    }
+  }
+  &.one-point-zero-spaced {
+    p {
+      margin-top: 10px;
+      margin-bottom: 12px;
+    }
+    & > * {
+      li > p {
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+        margin: 0px !important;
+      }
+    }
+  }
+  blockquote {
+    border-left: 3px solid $brand-primary;
+    color: rgba($black, 0.8);
+    margin-left: 0px;
+    padding-left: 16px;
+    padding-top: 4px;
+    font-style: italic;
+    p {
+      margin: 0;
+      padding-bottom: 4px;
+    }
+  }
+}
+
+.w-richtext:before,
+.w-richtext:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+.w-richtext:after {
+  clear: both;
+}
+.w-richtext[contenteditable="true"]:before,
+.w-richtext[contenteditable="true"]:after {
+  white-space: initial;
+}
+.w-richtext ol,
+.w-richtext ul {
+  overflow: hidden;
+}
+.w-richtext .w-richtext-figure-selected.w-richtext-figure-type-video div:before,
+.w-richtext .w-richtext-figure-selected[data-rt-type="video"] div:before {
+  outline: 2px solid #2895f7;
+}
+.w-richtext .w-richtext-figure-selected.w-richtext-figure-type-image div,
+.w-richtext .w-richtext-figure-selected[data-rt-type="image"] div {
+  outline: 2px solid #2895f7;
+}
+.w-richtext figure.w-richtext-figure-type-video > div:before,
+.w-richtext figure[data-rt-type="video"] > div:before {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.w-richtext figure {
+  position: relative;
+  max-width: 60%;
+}
+.w-richtext figure > div:before {
+  cursor: default!important;
+}
+.w-richtext figure img {
+  width: 100%;
+}
+.w-richtext figure figcaption.w-richtext-figcaption-placeholder {
+  opacity: 0.6;
+}
+.w-richtext figure div {
+  /* fix incorrectly sized selection border in the data manager */
+  font-size: 0px;
+  color: transparent;
+}
+.w-richtext figure.w-richtext-figure-type-image,
+.w-richtext figure[data-rt-type="image"] {
+  display: table;
+}
+.w-richtext figure.w-richtext-figure-type-image > div,
+.w-richtext figure[data-rt-type="image"] > div {
+  display: inline-block;
+}
+.w-richtext figure.w-richtext-figure-type-image > figcaption,
+.w-richtext figure[data-rt-type="image"] > figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
+.w-richtext figure.w-richtext-figure-type-video,
+.w-richtext figure[data-rt-type="video"] {
+  width: 60%;
+  height: 0;
+}
+.w-richtext figure.w-richtext-figure-type-video iframe,
+.w-richtext figure[data-rt-type="video"] iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.w-richtext figure.w-richtext-figure-type-video > div,
+.w-richtext figure[data-rt-type="video"] > div {
+  width: 100%;
+}
+.w-richtext figure.w-richtext-align-center {
+  margin-right: auto;
+  margin-left: auto;
+  clear: both;
+}
+.w-richtext figure.w-richtext-align-center.w-richtext-figure-type-image > div,
+.w-richtext figure.w-richtext-align-center[data-rt-type="image"] > div {
+  max-width: 100%;
+}
+.w-richtext figure.w-richtext-align-normal {
+  clear: both;
+}
+.w-richtext figure.w-richtext-align-fullwidth {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  clear: both;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.w-richtext figure.w-richtext-align-fullwidth > div {
+  display: inline-block;
+  /* padding-bottom is used for aspect ratios in video figures
+      we want the div to inherit that so hover/selection borders in the designer-canvas
+      fit right*/
+  padding-bottom: inherit;
+}
+.w-richtext figure.w-richtext-align-fullwidth > figcaption {
+  display: block;
+}
+.w-richtext figure.w-richtext-align-floatleft {
+  float: left;
+  margin-right: 15px;
+  clear: none;
+}
+.w-richtext figure.w-richtext-align-floatright {
+  float: right;
+  margin-left: 15px;
+  clear: none;
+}

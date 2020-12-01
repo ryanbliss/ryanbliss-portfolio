@@ -26,12 +26,27 @@ export default {
         return ['UX', 'CODE'].includes(value);
       },
     },
+    /*
+      This is an optional prop that narrows down
+      the tags that can be displayed. For example,
+      this is used when displaying the relevant tags
+      in PortfolioItemSummary.vue.
+    */
+    availableTagNames: {
+      type: Array,
+      required: false,
+      default: () => null,
+    },
   },
   computed: {
     ...mapGetters({
       tagsForType: 'tags/tagsForType',
     }),
     tags() {
+      if (this.availableTagNames != null) {
+        return this.tagsForType(this.type)
+          .filter((tag) => this.availableTagNames.includes(tag.name));
+      }
       return this.tagsForType(this.type);
     },
   },
