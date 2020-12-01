@@ -100,7 +100,7 @@ export default {
     padding-left: 1.1vw;
   }
   .footer-copyright {
-    font-size: 18px;
+    font-size: 1.25vw;
     font-weight: 700;
     color: $gray3;
   }
