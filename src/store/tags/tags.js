@@ -45,7 +45,7 @@ export default {
         type: 'UX',
       }),
       new Tag({
-        name: 'Google Analytics',
+        name: 'Mixpanel',
         type: 'UX',
       }),
       new Tag({
