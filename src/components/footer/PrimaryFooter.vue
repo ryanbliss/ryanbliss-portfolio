@@ -30,7 +30,7 @@ export default {
   name: 'PrimaryFooter',
   data() {
     return {
-      title: "Let's talk!",
+      title: "Let's Talk!",
       links: [
         {
           link: 'mailto:smile@ryanbliss.me',
