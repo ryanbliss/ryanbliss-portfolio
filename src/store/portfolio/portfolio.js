@@ -22,6 +22,12 @@ export default {
           'Hotjar',
         ],
         website: 'https://www.corzo.io',
+        galleryImagePaths: [
+          require('@/assets/portfolio/corzo/gallery/corzo-1.jpg'),
+          require('@/assets/portfolio/corzo/gallery/corzo-2.jpg'),
+          require('@/assets/portfolio/corzo/gallery/corzo-3.jpg'),
+          require('@/assets/portfolio/corzo/gallery/corzo-4.jpg'),
+        ],
       }),
       new PortfolioItem({
         id: 'pollenwise',
@@ -36,6 +42,11 @@ export default {
           'Custom Built',
         ],
         website: 'https://www.pollenwise.com',
+        galleryImagePaths: [
+          require('@/assets/portfolio/pollen-wise/gallery/pw-1.jpg'),
+          require('@/assets/portfolio/pollen-wise/gallery/pw-2.jpg'),
+          require('@/assets/portfolio/pollen-wise/gallery/pw-3.jpg'),
+        ],
       }),
     ],
   },

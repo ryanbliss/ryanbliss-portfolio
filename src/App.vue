@@ -44,6 +44,7 @@ export default {
 @import "./assets/styles/app-layout.scss";
 @import "./assets/styles/page-elements.scss";
 @import "./assets/styles/buefy-config.scss";
+@import "~@fortawesome/fontawesome-free/css/all.css";
 
 #app {
   font-family: 'Red Hat Display', sans-serif;

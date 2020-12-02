@@ -1,10 +1,12 @@
 <template>
   <div class="portfolio-item-gallery">
-    TODO: Image Gallery
+    <ImageCarousel :imagePaths="item.galleryImagePaths" />
   </div>
 </template>
 
 <script>
+import ImageCarousel from '@/components/carousel/ImageCarousel.vue';
+
 export default {
   name: 'PortfolioItemGallery',
   props: {
@@ -12,6 +14,9 @@ export default {
       type: Object,
       required: true,
     },
+  },
+  components: {
+    ImageCarousel,
   },
 };
 </script>
