@@ -2,11 +2,18 @@
   <a :class="className"
     @click="search"
   >
-    <div>{{ name }}</div>
+    <div class="tag-text">
+      {{ name }}
+    </div>
+    <div class="tag-count">
+      {{ portfolioItemCount }}
+    </div>
   </a>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   name: 'TagChip',
   props: {
@@ -16,6 +23,9 @@ export default {
     },
   },
   computed: {
+    ...mapGetters({
+      portfolioItemCountForTagName: 'portfolio/portfolioItemCountForTagName',
+    }),
     routeTagName() {
       return this.$store.state.route.tagName || null;
     },
@@ -24,9 +34,12 @@ export default {
     },
     className() {
       if (this.isSelected) {
-        return 'tag-chip paragraph-content selected noselect';
+        return 'tag-chip paragraph-content selected noselect flex center-cross';
       }
-      return 'tag-chip paragraph-content noselect';
+      return 'tag-chip paragraph-content noselect flex center-cross';
+    },
+    portfolioItemCount() {
+      return this.portfolioItemCountForTagName(this.name);
     },
   },
   methods: {
@@ -59,6 +72,12 @@ export default {
     border: 1px solid transparent;
     color: $white;
     background-color: $brand-primary;
+    .tag-text {
+      color: $white;
+    }
+    .tag-count {
+      color: $white;
+    }
   }
 
   @include mobile {
@@ -68,9 +87,19 @@ export default {
     // TODO:
   }
   padding: 5px 16px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
+  .tag-text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .tag-count {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-left: 8px;
+    margin-top: 2px;
+    color: $gray1;
+  }
   height: 35px;
 }
 </style>

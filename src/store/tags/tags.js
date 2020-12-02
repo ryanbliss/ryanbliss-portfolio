@@ -13,15 +13,11 @@ export default {
         type: 'CODE',
       }),
       new Tag({
-        name: 'Java',
-        type: 'CODE',
-      }),
-      new Tag({
         name: 'Node.js',
         type: 'CODE',
       }),
       new Tag({
-        name: 'C#',
+        name: 'Unity + C#',
         type: 'CODE',
       }),
       new Tag({
@@ -29,11 +25,7 @@ export default {
         type: 'CODE',
       }),
       new Tag({
-        name: 'Flutter',
-        type: 'CODE',
-      }),
-      new Tag({
-        name: 'Dart',
+        name: 'Flutter + Dart',
         type: 'CODE',
       }),
       new Tag({

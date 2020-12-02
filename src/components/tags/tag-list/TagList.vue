@@ -66,7 +66,7 @@ export default {
     // TODO:
   }
 
-  max-width: 486px;
+  max-width: 556px;
   margin-right: 48px;
   &:last-of-type {
     margin-right: 0px;

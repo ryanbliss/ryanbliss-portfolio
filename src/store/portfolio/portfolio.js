@@ -36,8 +36,7 @@ export default {
         imagePath: require('@/assets/portfolio/pollen-wise/pollen-wise-feature-image.png'),
         html: getPollenWiseHtml(),
         tagNames: [
-          'Flutter',
-          'Dart',
+          'Flutter + Dart',
           'Figma',
           'Custom Built',
         ],
@@ -55,5 +54,7 @@ export default {
       .find((item) => item.id === id),
     portfolioItemsForTagName: (state) => (tagName) => state.items
       .filter((item) => item.tagNames.includes(tagName)),
+    portfolioItemCountForTagName: (state, getters) => (tagName) => getters
+      .portfolioItemsForTagName(tagName).length,
   },
 };
