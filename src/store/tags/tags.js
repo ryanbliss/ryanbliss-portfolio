@@ -49,6 +49,10 @@ export default {
         type: 'UX',
       }),
       new Tag({
+        name: 'LucidChart',
+        type: 'UX',
+      }),
+      new Tag({
         name: 'Custom Built',
         type: 'UX',
       }),

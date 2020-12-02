@@ -92,8 +92,8 @@ export default {
     }
     .description {
       font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 15px;
+      line-height: 20px;
       color: $black;
       margin-bottom: 24px;
     }

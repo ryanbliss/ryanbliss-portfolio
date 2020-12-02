@@ -39,7 +39,7 @@ export default {
         },
         {
           link: 'tel:4255058866',
-          text: '(425)-505-8866',
+          text: '425-505-8866',
           iconPath: require('@/assets/icons/links/phone.svg'),
         },
         {
