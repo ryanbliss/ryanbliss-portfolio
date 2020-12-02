@@ -63,6 +63,7 @@ export default {
   }
   width: 100%;
   height: 48.26vw;
+  background-color: $hero;
 
   .logo-mark {
     padding-top: 1.38vw;

@@ -89,6 +89,7 @@ export default {
   padding-left: 8.88vw;
   padding-right: 8.88vw;
   padding-bottom: 2.2vw;
+  background-color: $hero;
 
   .footer-title {
     color: $brand-secondary;
