@@ -34,12 +34,13 @@ export default {
   },
   computed: {
     isAdminEditable() {
+      if (!this.$store.state.route.path) return false;
       /*
         This may seem like a hack, but because the rich text isn't stored
         in a database or edited via an API, this really only exists for
         my convenience.
       */
-      return this.$router.currentRoute.path.includes('admin');
+      return this.$store.state.route.path.includes('admin');
     },
   },
   components: {

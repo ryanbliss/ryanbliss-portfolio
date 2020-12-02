@@ -60,6 +60,18 @@ export default {
       editor: null,
     };
   },
+  watch: {
+    initialRichText(newValue, oldValue) {
+      if (newValue === oldValue || !this.editor) return;
+      this.editor.setContent(newValue);
+    },
+    editable() {
+      if (!this.editor) return;
+      this.editor.setOptions({
+        editable: this.editable,
+      });
+    },
+  },
   mounted() {
     this.editor = new Editor({
       extensions: [
