@@ -6,6 +6,9 @@ import getUserbuddyHtml from '@/assets/portfolio/userbuddy/userbuddy-html';
 import getSoarHtml from '@/assets/portfolio/soar/soar-html';
 import getWordwarsHtml from '@/assets/portfolio/wordwars/wordwars-html';
 import getSkipioHtml from '@/assets/portfolio/skipio/skipio-html';
+import getKnowMeHtml from '@/assets/portfolio/knowme/knowme-html';
+import getTaxzillaHtml from '@/assets/portfolio/taxzilla/taxzilla-html';
+import getCabanaHtml from '@/assets/portfolio/cabana/cabana-html';
 
 export default {
   namespaced: true,
@@ -74,7 +77,7 @@ export default {
       new PortfolioItem({
         id: 'soar',
         name: 'Soar',
-        description: 'From the founder of Ancestry.com, Soar is a platform for coaches and trainers various business needs (i.e. invoices, marketplace, etc.). As their primary UX consultant, I worked closely with their users to identify pain points, prototype ideas, and ship solutions.',
+        description: 'From the founder of Ancestry.com, Soar is a platform for coaches and trainers various business needs (i.e. invoices, marketplace, etc.). As their UX consultant, I worked closely with their users to identify pain points, prototype ideas, and ship solutions.',
         imagePath: require('@/assets/portfolio/soar/soar-feature-image.jpg'),
         html: getSoarHtml(),
         tagNames: [
@@ -91,7 +94,7 @@ export default {
       new PortfolioItem({
         id: 'wordwars',
         name: 'Wordwars.io',
-        description: 'What happens when you combine Scrabble with Battle Royale? Parachute down to any spot on the board and play words as fast as you can. Join words with opposing tiles to steal them; if you have no tiles left in play, you lose!',
+        description: 'What happens when you combine Scrabble with battle royale? Parachute down to any spot on the board and play words as fast as you can. Join words with opposing tiles to steal them; if you have no tiles left in play, you lose!',
         imagePath: require('@/assets/portfolio/wordwars/wordwars-feature-image.jpg'),
         html: getWordwarsHtml(),
         tagNames: [
@@ -111,19 +114,66 @@ export default {
       new PortfolioItem({
         id: 'skipio',
         name: 'Skipio',
-        description: "As Skipio's UX Design Manager, I oversaw their UX and analytics strategy for their web and mobile SMS-marketing automation platform, meeting regularly with customers to understand their needs iterate on wireframes.",
+        description: "As Skipio's UX Design Manager, I oversaw their UX and analytics strategy for their web and mobile SMS-marketing automation platform. There, I met regularly with customers to understand their needs and iterate on wireframes.",
         imagePath: require('@/assets/portfolio/skipio/skipio-feature-image.jpg'),
         html: getSkipioHtml(),
         tagNames: [
           'Sketch',
           'Pendo',
           'Swift',
+          'LucidChart',
         ],
         website: 'https://www.skipio.com',
         galleryImagePaths: [
           require('@/assets/portfolio/skipio/gallery/skipio-1.jpg'),
           require('@/assets/portfolio/skipio/gallery/skipio-2.jpg'),
           require('@/assets/portfolio/skipio/gallery/skipio-3.jpg'),
+        ],
+      }),
+      new PortfolioItem({
+        id: 'cabana',
+        name: 'Cabana',
+        description: 'More of an experiment than an app, Cabana was an idea that we decided to market validate before development. Cabana converted a Pocket digital reading list into a physical magazine.',
+        imagePath: require('@/assets/portfolio/cabana/cabana-feature-image.jpg'),
+        html: getCabanaHtml(),
+        tagNames: [
+          'Sketch',
+          'Hotjar',
+          'LucidChart',
+        ],
+        website: 'https://cabana.webflow.io/',
+        galleryImagePaths: [
+          require('@/assets/portfolio/cabana/cabana-feature-image.jpg'),
+        ],
+      }),
+      new PortfolioItem({
+        id: 'knowme',
+        name: 'KnowMe',
+        description: 'KnowMe aims to consolidate vast digital footprints into a private social network, allowing Spotify playlists to exist in the same journal entry as your Instagram Photos.',
+        imagePath: require('@/assets/portfolio/knowme/knowme-feature-image.jpg'),
+        html: getKnowMeHtml(),
+        tagNames: [
+          'Figma',
+          'Swift',
+          'LucidChart',
+        ],
+        website: 'https://www.knowme.life',
+        galleryImagePaths: [
+          require('@/assets/portfolio/knowme/knowme-feature-image.jpg'),
+        ],
+      }),
+      new PortfolioItem({
+        id: 'taxzilla',
+        name: 'Taxzilla',
+        description: 'The Taxzilla mobile was a companion to their web app — a web portal connecting independent contractors to accountants — allowing users to take photos of receipts to instantly log expenses, talk to their accountant, and more.',
+        imagePath: require('@/assets/portfolio/taxzilla/taxzilla-feature-image.jpg'),
+        html: getTaxzillaHtml(),
+        tagNames: [
+          'Sketch',
+        ],
+        website: null,
+        galleryImagePaths: [
+          require('@/assets/portfolio/taxzilla/taxzilla-feature-image.jpg'),
         ],
       }),
     ],
