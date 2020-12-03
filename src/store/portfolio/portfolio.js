@@ -5,6 +5,7 @@ import getPollenWiseHtml from '@/assets/portfolio/pollen-wise/pollen-wise-html';
 import getUserbuddyHtml from '@/assets/portfolio/userbuddy/userbuddy-html';
 import getSoarHtml from '@/assets/portfolio/soar/soar-html';
 import getWordwarsHtml from '@/assets/portfolio/wordwars/wordwars-html';
+import getSkipioHtml from '@/assets/portfolio/skipio/skipio-html';
 
 export default {
   namespaced: true,
@@ -13,7 +14,7 @@ export default {
       new PortfolioItem({
         id: 'corzo',
         name: 'Corzo',
-        description: 'As the co-founder of Corzo, I helped build a note-taking tool for account executives that use Salesforce. Integrating with tools its users use each day, Corzo simplifies + consolidates workflows of enterprise account executives.',
+        description: 'As a co-founder of Corzo, I helped build a note-taking tool for account executives that use Salesforce. Integrating with tools its users use each day, Corzo simplifies + consolidates workflows of enterprise account executives.',
         imagePath: require('@/assets/portfolio/corzo/corzo-feature-image.png'),
         html: getCorzoHtml(),
         tagNames: [
@@ -105,6 +106,24 @@ export default {
           require('@/assets/portfolio/wordwars/gallery/wordwars-3.jpg'),
           require('@/assets/portfolio/wordwars/gallery/wordwars-4.jpg'),
           require('@/assets/portfolio/wordwars/gallery/wordwars-5.jpg'),
+        ],
+      }),
+      new PortfolioItem({
+        id: 'skipio',
+        name: 'Skipio',
+        description: "As Skipio's UX Design Manager, I oversaw their UX and analytics strategy for their web and mobile SMS-marketing automation platform, meeting regularly with customers to understand their needs iterate on wireframes.",
+        imagePath: require('@/assets/portfolio/skipio/skipio-feature-image.jpg'),
+        html: getSkipioHtml(),
+        tagNames: [
+          'Sketch',
+          'Pendo',
+          'Swift',
+        ],
+        website: 'https://www.skipio.com',
+        galleryImagePaths: [
+          require('@/assets/portfolio/skipio/gallery/skipio-1.jpg'),
+          require('@/assets/portfolio/skipio/gallery/skipio-2.jpg'),
+          require('@/assets/portfolio/skipio/gallery/skipio-3.jpg'),
         ],
       }),
     ],
