@@ -39,14 +39,14 @@ export default {
   data() {
     return {
       // eslint-disable-next-line global-require
-      backgroundUrl: require('@/assets/images/backgrounds/hero-bg-2.png'),
+      backgroundUrl: require('@/assets/images/backgrounds/hero-bg.png'),
       logo: {
         first: 'ryan',
         last: 'bliss',
       },
       content: {
         title: 'UX + Code.',
-        body: 'If you are looking for someone with deep experience coding + designing applications, conducting user research, and making data-informed decisions, you’re looking for Ryan Bliss.',
+        body: "If you're looking for someone with deep experience coding + designing applications, conducting user research, and making data-informed decisions, then you're looking for Ryan Bliss.",
       },
     };
   },
