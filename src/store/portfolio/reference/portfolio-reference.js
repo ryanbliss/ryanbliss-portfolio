@@ -9,6 +9,9 @@ import getSkipioHtml from '@/assets/portfolio/skipio/skipio-html';
 import getKnowMeHtml from '@/assets/portfolio/knowme/knowme-html';
 import getTaxzillaHtml from '@/assets/portfolio/taxzilla/taxzilla-html';
 import getCabanaHtml from '@/assets/portfolio/cabana/cabana-html';
+import getFlipbookHtml from '@/assets/portfolio/flipbook/flipbook-html';
+import getHashtaggyHtml from '@/assets/portfolio/hashtaggy/hashtaggy-html';
+import getCovidHtml from '@/assets/portfolio/covid/covid-html';
 
 export const corzo = new PortfolioItem({
   id: 'corzo',
@@ -42,8 +45,9 @@ export const pollenWise = new PortfolioItem({
   tagNames: [
     'Flutter + Dart',
     'Figma',
-    'Custom Built',
+    'Custom',
     'LucidChart',
+    'Firebase',
   ],
   website: 'https://www.pollenwise.com',
   galleryImagePaths: [
@@ -97,6 +101,7 @@ export const wordwars = new PortfolioItem({
     'Unity + C#',
     'Sketch',
     'LucidChart',
+    'Firebase',
   ],
   website: 'https://apps.apple.com/us/app/wordwars-io/id1448429683',
   galleryImagePaths: [
@@ -170,5 +175,58 @@ export const taxzilla = new PortfolioItem({
   website: null,
   galleryImagePaths: [
     require('@/assets/portfolio/taxzilla/feature-image.jpg'),
+  ],
+});
+export const flipbook = new PortfolioItem({
+  id: 'flipbook',
+  name: 'Flipbook',
+  description: 'As a fun side project over a Christmas vacation, I built Flipbook — a way to turn a photo collection into a GIF-style image. It aimed to combine the simple UX of Snapchat Stories with a childhood favorite — a flip book.',
+  imagePath: require('@/assets/portfolio/flipbook/feature-image.jpg'),
+  html: getFlipbookHtml(),
+  tagNames: [
+    'Flutter + Dart',
+    'Sketch',
+    'Firebase',
+  ],
+  website: 'https://apps.apple.com/us/app/flipbook-photo-story-books/id1493150137',
+  galleryImagePaths: [
+    require('@/assets/portfolio/flipbook/feature-image.jpg'),
+  ],
+});
+export const hashtaggy = new PortfolioItem({
+  id: 'hashtaggy',
+  name: 'Hashtaggy',
+  description: 'During college, despite having no credible experience, I co-founded Hashtaggy — a social media app aimed at helping people organize + find casual hangouts on campus. The app reached over 1,000 users at our school and raised over $40,000.',
+  imagePath: require('@/assets/portfolio/hashtaggy/feature-image.jpg'),
+  html: getHashtaggyHtml(),
+  tagNames: [
+    'Swift',
+    'Sketch',
+    'Firebase',
+  ],
+  website: 'https://www.facebook.com/hashtaggy/',
+  galleryImagePaths: [
+    require('@/assets/portfolio/hashtaggy/gallery/hashtaggy-1.jpg'),
+    require('@/assets/portfolio/hashtaggy/gallery/hashtaggy-2.jpg'),
+    require('@/assets/portfolio/hashtaggy/gallery/hashtaggy-3.jpg'),
+    require('@/assets/portfolio/hashtaggy/gallery/hashtaggy-4.jpg'),
+    require('@/assets/portfolio/hashtaggy/gallery/hashtaggy-5.jpg'),
+  ],
+});
+export const covidQuiz = new PortfolioItem({
+  id: 'covid',
+  name: 'COVID-19 Quiz',
+  description: 'As a project for Pollen Wise, I created a COVID-19 symptom quiz to help allergy suffers understand the differences between their allergy symptoms and possible COVID-19 symptoms, reaching thousands of people in 2020.',
+  imagePath: require('@/assets/portfolio/covid/feature-image.jpg'),
+  html: getCovidHtml(),
+  tagNames: [
+    'Vue.js',
+    'Mixpanel',
+    'Figma',
+    'Javascript',
+  ],
+  website: 'https://quiz.pollenwise.com/quiz/46dea0f4-4998-4051-af9b-27c963c7b57b',
+  galleryImagePaths: [
+    require('@/assets/portfolio/covid/feature-image.jpg'),
   ],
 });

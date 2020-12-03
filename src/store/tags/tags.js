@@ -53,7 +53,11 @@ export default {
         type: 'UX',
       }),
       new Tag({
-        name: 'Custom Built',
+        name: 'Firebase',
+        type: 'UX',
+      }),
+      new Tag({
+        name: 'Custom',
         type: 'UX',
       }),
     ],

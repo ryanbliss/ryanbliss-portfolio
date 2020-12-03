@@ -8,6 +8,9 @@ import {
   taxzilla,
   userbuddy,
   wordwars,
+  flipbook,
+  hashtaggy,
+  covidQuiz,
 } from './reference/portfolio-reference';
 
 export default {
@@ -22,7 +25,10 @@ export default {
       skipio,
       cabana,
       knowMe,
+      covidQuiz,
+      flipbook,
       taxzilla,
+      hashtaggy,
     ],
   },
   getters: {
