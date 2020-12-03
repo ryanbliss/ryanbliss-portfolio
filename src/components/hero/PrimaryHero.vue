@@ -39,7 +39,7 @@ export default {
   data() {
     return {
       // eslint-disable-next-line global-require
-      backgroundUrl: require('@/assets/images/backgrounds/hero-bg.png'),
+      backgroundUrl: require('@/assets/images/backgrounds/hero-bg-2.png'),
       logo: {
         first: 'ryan',
         last: 'bliss',
