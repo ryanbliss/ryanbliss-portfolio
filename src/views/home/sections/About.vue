@@ -5,7 +5,10 @@
         {{ header.title }}
       </div>
       <div class="intro-text paragraph-content">
-        {{ header.body }}
+        {{ header.body1 }}
+      </div>
+      <div class="intro-text paragraph-content">
+        {{ header.body2 }}
       </div>
     </div>
     <div class="flex wrap">
@@ -36,7 +39,8 @@ export default {
     return {
       header: {
         title: 'About Me.',
-        body: 'Having built, designed, and managed over a dozen mobile / web applications, Ryan knows what it takes to build modern applications driven by user feedback.',
+        body1: "Having built, designed, and managed over a dozen mobile / web applications, I know what it takes to build modern applications driven by user feedback. Coming from a product management and entrepreneurship background, I'm not your average product developer — I have deep experience with each stage of the product development lifecycle.",
+        body2: "I am currently living in Salt Lake City, UT, working as a freelance app designer and developer for startups in the Utah Valley. If you need someone with a proven record of designing, building, and shipping quality apps, let's talk!",
       },
     };
   },
