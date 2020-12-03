@@ -4,6 +4,7 @@ import getCorzoHtml from '@/assets/portfolio/corzo/corzo-html';
 import getPollenWiseHtml from '@/assets/portfolio/pollen-wise/pollen-wise-html';
 import getUserbuddyHtml from '@/assets/portfolio/userbuddy/userbuddy-html';
 import getSoarHtml from '@/assets/portfolio/soar/soar-html';
+import getWordwarsHtml from '@/assets/portfolio/wordwars/wordwars-html';
 
 export default {
   namespaced: true,
@@ -42,6 +43,7 @@ export default {
           'Flutter + Dart',
           'Figma',
           'Custom Built',
+          'LucidChart',
         ],
         website: 'https://www.pollenwise.com',
         galleryImagePaths: [
@@ -61,6 +63,7 @@ export default {
           'Vue.js',
           'Javascript',
           'Figma',
+          'LucidChart',
         ],
         website: null,
         galleryImagePaths: [
@@ -79,9 +82,29 @@ export default {
           'LucidChart',
           'Javascript',
         ],
-        website: null,
+        website: 'https://www.soar.com',
         galleryImagePaths: [
           require('@/assets/portfolio/soar/soar-feature-image.jpg'),
+        ],
+      }),
+      new PortfolioItem({
+        id: 'wordwars',
+        name: 'Wordwars.io',
+        description: 'What happens when you combine Scrabble with Battle Royale? Parachute down to any spot on the board and play words as fast as you can. Join words with opposing tiles to steal them; if you have no tiles left in play, you lose!',
+        imagePath: require('@/assets/portfolio/wordwars/wordwars-feature-image.jpg'),
+        html: getWordwarsHtml(),
+        tagNames: [
+          'Unity + C#',
+          'Sketch',
+          'LucidChart',
+        ],
+        website: 'https://apps.apple.com/us/app/wordwars-io/id1448429683',
+        galleryImagePaths: [
+          require('@/assets/portfolio/wordwars/gallery/wordwars-1.jpg'),
+          require('@/assets/portfolio/wordwars/gallery/wordwars-2.jpg'),
+          require('@/assets/portfolio/wordwars/gallery/wordwars-3.jpg'),
+          require('@/assets/portfolio/wordwars/gallery/wordwars-4.jpg'),
+          require('@/assets/portfolio/wordwars/gallery/wordwars-5.jpg'),
         ],
       }),
     ],
