@@ -34,11 +34,6 @@ import PrimaryFooter from '@/components/footer/PrimaryFooter.vue';
 
 export default {
   name: 'Portfolio',
-  watch: {
-    tag(newValue) {
-      console.log(newValue);
-    },
-  },
   computed: {
     ...mapGetters({
       tagForName: 'tags/tagForName',
