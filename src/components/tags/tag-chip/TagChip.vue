@@ -44,10 +44,18 @@ export default {
   },
   methods: {
     search() {
-      this.$router.push({
-        path: '/portfolio',
-        query: { tagname: this.name },
-      });
+      if (this.isSelected) {
+        // We remove the tagname query param
+        this.$router.push({
+          path: '/portfolio',
+        });
+      } else {
+        // We navigate to the portfolio page with selected tagname query param
+        this.$router.push({
+          path: '/portfolio',
+          query: { tagname: this.name },
+        });
+      }
     },
   },
 };
@@ -59,8 +67,8 @@ export default {
   border-radius: 20px;
   color: $black;
   cursor: pointer;
-  margin-bottom: 12px;
-  margin-right: 12px;
+  margin-bottom: 8px;
+  margin-right: 8px;
   &:last-of-type {
     margin-right: 0px;
   }
@@ -86,20 +94,18 @@ export default {
   @include laptop {
     // TODO:
   }
-  padding: 5px 16px;
+  padding: 0px 12px;
   .tag-text {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
     font-weight: 600;
   }
   .tag-count {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 14px;
     font-weight: 400;
     margin-left: 8px;
-    margin-top: 2px;
+    margin-top: 1px;
     color: $gray1;
   }
-  height: 35px;
+  height: 30px;
 }
 </style>

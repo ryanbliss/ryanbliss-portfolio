@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 .list-header {
-  margin-top: 48px;
+  margin-top: 36px;
   .accent {
     width: 8px;
     height: 28px;
@@ -33,8 +33,8 @@ export default {
     margin-bottom: 24px;
     color: $brand-primary;
     font-weight: 900;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 </style>

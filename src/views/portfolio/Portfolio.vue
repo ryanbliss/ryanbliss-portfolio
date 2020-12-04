@@ -3,7 +3,7 @@
     <SecondaryHero
       title="Portfolio"
     />
-    <div class="page-section">
+    <div class="page-section no-top">
       <div class="flex wrap">
         <TagList
           title="Languages & Frameworks"
@@ -56,5 +56,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.page-section {
+  &.no-top {
+    /*
+      We are overriding default styling for this global class
+      to compensate for the top padding on the TagList headers
+    */
+    margin-top: 0px !important;
+  }
+}
 </style>
