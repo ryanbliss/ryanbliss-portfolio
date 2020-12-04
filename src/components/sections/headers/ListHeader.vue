@@ -30,7 +30,7 @@ export default {
   .title {
     margin-top: 14px;
     margin-left: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     color: $brand-primary;
     font-weight: 900;
     font-size: 28px;
