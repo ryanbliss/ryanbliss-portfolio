@@ -10,6 +10,7 @@
   background-color: #fdfdfd;
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .24) !important;
   border-radius: 12px;
+  z-index: 100;
 
   &.is-hidden {
     visibility: hidden;
