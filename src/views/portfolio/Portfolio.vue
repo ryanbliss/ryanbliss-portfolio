@@ -16,8 +16,8 @@
       </div>
       <div class="flex">
         <PortfolioList
-          :title="`${tag.name} Projects`"
-          :tagNameFilter="tag.name"
+          :title="title"
+          :tagNameFilter="tagName"
         />
       </div>
     </div>
@@ -34,6 +34,11 @@ import PrimaryFooter from '@/components/footer/PrimaryFooter.vue';
 
 export default {
   name: 'Portfolio',
+  watch: {
+    tag(newValue) {
+      console.log(newValue);
+    },
+  },
   computed: {
     ...mapGetters({
       tagForName: 'tags/tagForName',
@@ -44,6 +49,10 @@ export default {
     tag() {
       if (!this.tagName) return null;
       return this.tagForName(this.tagName);
+    },
+    title() {
+      if (!this.tagName) return 'All Projects';
+      return `${this.tag.name} Projects`;
     },
   },
   components: {
