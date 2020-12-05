@@ -11,6 +11,7 @@ import {
   flipbook,
   hashtaggy,
   covidQuiz,
+  coinly,
 } from './reference/portfolio-reference';
 
 export default {
@@ -27,6 +28,7 @@ export default {
       knowMe,
       covidQuiz,
       flipbook,
+      coinly,
       taxzilla,
       hashtaggy,
     ],

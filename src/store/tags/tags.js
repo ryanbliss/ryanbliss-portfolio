@@ -17,6 +17,10 @@ export default {
         type: 'CODE',
       }),
       new Tag({
+        name: 'Go',
+        type: 'CODE',
+      }),
+      new Tag({
         name: 'Unity + C#',
         type: 'CODE',
       }),

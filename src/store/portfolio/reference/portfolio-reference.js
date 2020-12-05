@@ -12,6 +12,7 @@ import getCabanaHtml from '@/assets/portfolio/cabana/cabana-html';
 import getFlipbookHtml from '@/assets/portfolio/flipbook/flipbook-html';
 import getHashtaggyHtml from '@/assets/portfolio/hashtaggy/hashtaggy-html';
 import getCovidHtml from '@/assets/portfolio/covid/covid-html';
+import getCoinlyHtml from '@/assets/portfolio/coinly/coinly-html';
 
 export const corzo = new PortfolioItem({
   id: 'corzo',
@@ -239,6 +240,24 @@ export const covidQuiz = new PortfolioItem({
   website: 'https://quiz.pollenwise.com/quiz/46dea0f4-4998-4051-af9b-27c963c7b57b',
   galleryImagePaths: [
     require('@/assets/portfolio/covid/feature-image.jpg'),
+  ],
+  buttonText: 'Learn More',
+});
+export const coinly = new PortfolioItem({
+  id: 'coinly',
+  name: 'Coinly',
+  description: 'Track digital cryptocurrency profits in one place, with support for Bitcoin, Litecoin, Ethereum, and Bitcoin Cash. Track transactions manually, or automatically using an integration with Coinbase.',
+  imagePath: require('@/assets/portfolio/coinly/feature-image.jpg'),
+  html: getCoinlyHtml(),
+  tagNames: [
+    'Swift',
+    'Sketch',
+    'Firebase',
+    'Go',
+  ],
+  website: 'http://coinly.webflow.io',
+  galleryImagePaths: [
+    require('@/assets/portfolio/coinly/feature-image.jpg'),
   ],
   buttonText: 'Learn More',
 });
