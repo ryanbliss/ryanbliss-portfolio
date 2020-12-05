@@ -49,7 +49,7 @@ export const pollenWise = new PortfolioItem({
     'LucidChart',
     'Firebase',
   ],
-  website: 'https://www.pollenwise.com',
+  website: 'https://apps.apple.com/us/app/pollen-wise/id1474856970',
   galleryImagePaths: [
     require('@/assets/portfolio/pollen-wise/gallery/pw-1.jpg'),
     require('@/assets/portfolio/pollen-wise/gallery/pw-2.jpg'),
