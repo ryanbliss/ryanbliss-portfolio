@@ -8,6 +8,7 @@ export default class PortfolioItem {
     tagNames,
     website,
     galleryImagePaths,
+    buttonText,
   }) {
     this.id = id;
     this.name = name;
@@ -17,5 +18,6 @@ export default class PortfolioItem {
     this.tagNames = tagNames;
     this.website = website || null;
     this.galleryImagePaths = galleryImagePaths;
+    this.buttonText = buttonText;
   }
 }

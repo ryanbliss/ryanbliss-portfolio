@@ -35,6 +35,7 @@ export const corzo = new PortfolioItem({
     require('@/assets/portfolio/corzo/gallery/corzo-3.jpg'),
     require('@/assets/portfolio/corzo/gallery/corzo-4.jpg'),
   ],
+  buttonText: 'Read Case Study',
 });
 export const pollenWise = new PortfolioItem({
   id: 'pollenwise',
@@ -55,6 +56,7 @@ export const pollenWise = new PortfolioItem({
     require('@/assets/portfolio/pollen-wise/gallery/pw-2.jpg'),
     require('@/assets/portfolio/pollen-wise/gallery/pw-3.jpg'),
   ],
+  buttonText: 'Read Case Study',
 });
 export const userbuddy = new PortfolioItem({
   id: 'userbuddy',
@@ -73,6 +75,7 @@ export const userbuddy = new PortfolioItem({
   galleryImagePaths: [
     require('@/assets/portfolio/userbuddy/feature-image.jpg'),
   ],
+  buttonText: 'Learn More',
 });
 export const soar = new PortfolioItem({
   id: 'soar',
@@ -90,6 +93,7 @@ export const soar = new PortfolioItem({
   galleryImagePaths: [
     require('@/assets/portfolio/soar/feature-image.jpg'),
   ],
+  buttonText: 'Learn More',
 });
 export const wordwars = new PortfolioItem({
   id: 'wordwars',
@@ -111,6 +115,7 @@ export const wordwars = new PortfolioItem({
     require('@/assets/portfolio/wordwars/gallery/wordwars-4.jpg'),
     require('@/assets/portfolio/wordwars/gallery/wordwars-5.jpg'),
   ],
+  buttonText: 'Learn More',
 });
 export const skipio = new PortfolioItem({
   id: 'skipio',
@@ -130,6 +135,7 @@ export const skipio = new PortfolioItem({
     require('@/assets/portfolio/skipio/gallery/skipio-2.jpg'),
     require('@/assets/portfolio/skipio/gallery/skipio-3.jpg'),
   ],
+  buttonText: 'Learn More',
 });
 export const cabana = new PortfolioItem({
   id: 'cabana',
@@ -146,6 +152,7 @@ export const cabana = new PortfolioItem({
   galleryImagePaths: [
     require('@/assets/portfolio/cabana/feature-image.jpg'),
   ],
+  buttonText: 'Learn More',
 });
 export const knowMe = new PortfolioItem({
   id: 'knowme',
@@ -162,6 +169,7 @@ export const knowMe = new PortfolioItem({
   galleryImagePaths: [
     require('@/assets/portfolio/knowme/feature-image.jpg'),
   ],
+  buttonText: 'Learn More',
 });
 export const taxzilla = new PortfolioItem({
   id: 'taxzilla',
@@ -176,6 +184,7 @@ export const taxzilla = new PortfolioItem({
   galleryImagePaths: [
     require('@/assets/portfolio/taxzilla/feature-image.jpg'),
   ],
+  buttonText: 'Learn More',
 });
 export const flipbook = new PortfolioItem({
   id: 'flipbook',
@@ -192,6 +201,7 @@ export const flipbook = new PortfolioItem({
   galleryImagePaths: [
     require('@/assets/portfolio/flipbook/feature-image.jpg'),
   ],
+  buttonText: 'Learn More',
 });
 export const hashtaggy = new PortfolioItem({
   id: 'hashtaggy',
@@ -212,6 +222,7 @@ export const hashtaggy = new PortfolioItem({
     require('@/assets/portfolio/hashtaggy/gallery/hashtaggy-4.jpg'),
     require('@/assets/portfolio/hashtaggy/gallery/hashtaggy-5.jpg'),
   ],
+  buttonText: 'Learn More',
 });
 export const covidQuiz = new PortfolioItem({
   id: 'covid',
@@ -229,4 +240,5 @@ export const covidQuiz = new PortfolioItem({
   galleryImagePaths: [
     require('@/assets/portfolio/covid/feature-image.jpg'),
   ],
+  buttonText: 'Learn More',
 });

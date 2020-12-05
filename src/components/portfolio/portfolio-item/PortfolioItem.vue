@@ -13,7 +13,7 @@
       <div class="description paragraph-content">
         {{ item.description }}
       </div>
-      <AnimatedButton text="Learn More"
+      <AnimatedButton :text="item.buttonText"
         style="margin-left: -4px;"
         @select="onPressLearnMore"
       />
