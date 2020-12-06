@@ -1,12 +1,8 @@
 export default function html() {
   return `
-    <h1>What is Cabana?</h1>
-    <p>Pellentesque lobortis aliquam odio quis fringilla. Aenean augue sapien, dapibus sit amet ultricies eget, pellentesque eu ante. Nulla nunc diam, vehicula eget dapibus rutrum, tristique quis velit.</p>
-    <h1>What was my role?</h1>
-    <p>Pellentesque lobortis aliquam odio quis fringilla. Aenean augue sapien, dapibus sit amet ultricies eget, pellentesque eu ante. Nulla nunc diam, vehicula eget dapibus rutrum, tristique quis velit.</p>
-    <h2>Market Validation</h2>
-    <p>Nulla nunc diam, vehicula eget dapibus rutrum, tristique quis velit.</p>
-    <h2>Product Management</h2>
-    <p>Nulla nunc diam, vehicula eget dapibus rutrum, tristique quis velit.</p>
+  <h1>What is Cabana?</h1>
+  <p>More of an experiment than an app, Cabana was an idea that we decided to market validate before development. The idea was that Cabana would convert Pocket digital reading lists into a physical magazines, similar to how Chatbooks converts Instagram photos into physical photo albums.</p>
+  <p>While the data we received was somewhat promising, we eventually abandoned the idea, partially due to copyright concerns. </p>
+  <p>To learn more about Cabana, the highest-performing landing page we used in our A/B conversion tests can be found <a href="https://cabana.webflow.io/">here</a>.</p>
   `;
 }
