@@ -1,14 +1,29 @@
 export default function html() {
   return `
-    <h1>What is Skipio?</h1>
-    <p>Pellentesque lobortis aliquam odio quis fringilla. Aenean augue sapien, dapibus sit amet ultricies eget, pellentesque eu ante. Nulla nunc diam, vehicula eget dapibus rutrum, tristique quis velit.</p>
-    <h1>What was my role?</h1>
-    <p>Pellentesque lobortis aliquam odio quis fringilla. Aenean augue sapien, dapibus sit amet ultricies eget, pellentesque eu ante. Nulla nunc diam, vehicula eget dapibus rutrum, tristique quis velit.</p>
-    <h2>UX</h2>
-    <p>Nulla nunc diam, vehicula eget dapibus rutrum, tristique quis velit.</p>
-    <h2>Analytics & Pendo</h2>
-    <p>Nulla nunc diam, vehicula eget dapibus rutrum, tristique quis velit.</p>
-    <h2>Research & Development</h2>
-    <p>Nulla nunc diam, vehicula eget dapibus rutrum, tristique quis velit.</p>
+  <h1>What is Skipio?</h1>
+  <p>Skipio is an Utah-based company that sells text-message marketing tools to small business owners. Their web and mobile apps allow its users to have a separate work phone number, allowing for personal conversations with customers. They also have a wide variety of marketing automation features, such as drip+event campaigns, scheduled delivery, and birthday texts.</p>
+  <h1>What was my role?</h1>
+  <h2>User Experience</h2>
+  <p>As Skipio's UX design manager, I was responsible for the experience and strategy of new features and changes made on their web app, as well as a full redesign of their mobile app.</p>
+  <p>When I first met Skipio, they had recently rebuilt their web app using designs from a marketing agency, which meant a lot of the foundational-product decisions had been made. In doing that, they made some critical mistakes with the UX, which was causing quite a few headaches for key customers. They were looking for an in-house UX team, and I was hired to manage that effort.</p>
+  <p>At first, I was the only designer, but I introduced them to a freelance designer named Blake, whom I had worked with in the past, who they engaged for several months.</p>
+  <p>Early on, job was mostly translating business requirements for new features into low-fidelity prototypes and facilitating feedback sessions with key customers and stakeholders within the company. A lot of these ideas were very experimental; others were key initiatives with tight deadlines. After a mockup was given a green light, I would pass off the wireframes to Blake for a higher-fidelity pass, clearly communicating the project requirements.</p>
+  <p>Once I felt his designs were ready, I'd get feedback from key stakeholders, before working with a project manager to break the initiatives into clearly defined tasks for development.</p>
+  <p>Over time, I began to become more intertwined with other areas of the product. Several months before I transitioned into a freelance role for them, the company underwent a reorganization, after which the CTO reported to my boss; this effectively put the entire product team under his control.</p>
+  <p>In that process, my boss put me in charge of the implementation strategy for product initiatives, as well as our analytics strategy. While I didn't set product priorities (that was done by the executive team), I was responsible for determining how features should be implemented, with the expectation that all decisions be made in based on the needs of key customers and stakeholders. That meant frequent meetings with customers, as well as a better analytics strategy.</p>
+  <p><strong>Pendo</strong></p>
+  <p>The first thing we did was integrate a powerful enterprise analytics tool called Pendo, which combines powerful analytics with embedded support content / guided walkthroughs. My goal was to get things set up in a way where the entire organization — especially customer support — could create embedded walkthroughs + announcements.</p>
+  <p>Further, I organized our users into cohorts, allowing us to analyze engagement of our most important customer segments, with the goal of using quantifiable data in each proposal my boss made to the executive team.</p>
+  <p>In analyzing the data, I discovered some troubling friction points in the UX that, up to that point, had only been suspected. Specifically, there were significant problems with certain user segments in using automated campaigns, with only a small portion of our new users completing the experience funnel (in this case, creating a campaign and adding a contact to it).</p>
+  <p>What we discovered, however, was that our "hyper engaged" users were using that feature a ton. Our hypothesis was that if we could increase engagement of that feature, then we could move more users into that segment.</p>
+  <p>With that in mind, we set up an experiment: we would target specific types of users (i.e. fitness trainers) with targeted content and campaign templates, guiding them how to set up campaigns in the process. We figured if they knew how and why the feature was relevant to them, that they'd be more inclined to use it.</p>
+  <p>The results blew us away, with our pilot test showing over 40% improvement in engagement for that feature. Our hypothesis was further validated later, when it was clear that it was indeed improving engagement and customer retention. Since I left, they've have taken this concept to the next level, creating an entirely new home page for their app built around targeted content and workflows.</p>
+  <p><strong>Freelance / R&amp;D</strong></p>
+  <p>After I had been working with Skipio for quite some time, I decided I wanted to branch out and try something new. My idea was that I'd transition out of Skipio by moving into an R&amp;D freelance position, working from home all but one day per week. </p>
+  <p>In my time there, I had a ton of feedback from customers — more than I had time to deal with. I proposed easing out of my day-to-day responsibilities, and focusing more on R&amp;D projects based on their deep customer needs. While they were sad to see me go, they were really excited about this idea, and I worked with them on a wide variety of projects before moving onto other things.</p>
+  <p>For a lot of these projects, I would both design and prototype various features and propose them. Some ideas they'd take, others they'd make note of for a rainy day that probably never came. In any case, it was a fun exercise in using pages of customer pain points and working on a wide variety of ideas to try and solve them.</p>
+  <h1>Summary</h1>
+  <p>Overall, the experience was incredibly enlightening for me. While I didn't agree with all of their processes — specifically around some short-term thinking they used in prioritizing new features to try and close new sales, as opposed to deepen their presence in industries they were already in — they taught me a ton about product development within a larger company. </p>
+  <p>If you'd like to learn more about Skipio, you can visit their website <a href="https://www.skipio.com">here</a>.</p>
   `;
 }

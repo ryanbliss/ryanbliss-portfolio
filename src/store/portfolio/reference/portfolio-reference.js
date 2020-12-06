@@ -136,7 +136,7 @@ export const skipio = new PortfolioItem({
     require('@/assets/portfolio/skipio/gallery/skipio-2.jpg'),
     require('@/assets/portfolio/skipio/gallery/skipio-3.jpg'),
   ],
-  buttonText: 'Learn More',
+  buttonText: 'Read Case Study',
 });
 export const cabana = new PortfolioItem({
   id: 'cabana',
