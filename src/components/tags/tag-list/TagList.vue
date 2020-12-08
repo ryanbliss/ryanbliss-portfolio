@@ -60,7 +60,8 @@ export default {
 <style lang="scss" scoped>
 .tag-list {
   @include mobile {
-    // TODO:
+    margin-right: 0px;
+    max-width: 100%;
   }
   @include laptop {
     // TODO:
@@ -73,6 +74,9 @@ export default {
   }
 
   .tag-chips {
+    @include mobile {
+      padding-left: 0px;
+    }
     padding-left: 32px;
   }
 }

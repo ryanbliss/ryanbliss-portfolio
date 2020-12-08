@@ -70,6 +70,9 @@ export default {
   }
 
   .list-items {
+    @include mobile {
+      padding-left: 0px;
+    }
     padding-left: 32px;
   }
 }

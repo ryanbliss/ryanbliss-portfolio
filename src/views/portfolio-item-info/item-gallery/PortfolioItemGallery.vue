@@ -23,6 +23,10 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio-item-gallery {
+  @include mobile {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
   color: $white;
   background-color: $hero;
   padding-top: 52px;

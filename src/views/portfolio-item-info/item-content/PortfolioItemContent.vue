@@ -55,7 +55,9 @@ export default {
   padding-top: 32px;
   .portfolio-inner-content {
     @include mobile {
-      // TODO:
+      width: 100%;
+      padding-left: 24px;
+      padding-right: 24px;
     }
     @include laptop {
       // TODO:
@@ -63,6 +65,9 @@ export default {
     width: 556px;
 
     .feature-image {
+      @include mobile {
+        width: 100%;
+      }
       width: 556px;
     }
   }

@@ -65,36 +65,32 @@ export default {
   height: 48.26vw;
   background-color: $hero;
 
-  .logo-mark {
-    padding-top: 1.38vw;
-    padding-left: 2.5vw;
-    font-style: normal;
-    text-align: left;
-    cursor: pointer;
-    .first-word {
-      color: $white;
-      font-weight: bold;
-      font-size: 1.667vw;
-    }
-    .last-word {
-      color: $brand-secondary;
-      font-weight: 900;
-      font-size: 3.88vw;
-      margin-top: -0.97vw;
-    }
-  }
-
   .hero-content {
+    @include mobile {
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-bottom: 20px;
+    }
     margin-left: 8.88vw;
     margin-bottom: 4.3vw;
     font-style: normal;
     text-align: left;
     .title {
+      @include mobile {
+        font-size: 44px;
+        margin-bottom: 16px;
+      }
       color: $brand-secondary;
       font-weight: 900;
       font-size: 6.944vw;
     }
     .paragraph-content {
+      @include mobile {
+        font-size: 12px;
+        margin-left: 4px;
+        width: 100%;
+        display: none;
+      }
       margin-left: 0.83vw;
       color: $white;
       font-weight: 700;

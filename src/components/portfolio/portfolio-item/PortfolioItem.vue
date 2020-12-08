@@ -57,27 +57,49 @@ export default {
   }
 
   .image {
+    @include mobile {
+      max-width: 100%;
+      min-width: 100%;
+    }
     max-width: 536px;
     min-width: 356px;
   }
   .preview {
+    @include mobile {
+      width: 100%;
+      margin-left: 0px;
+      margin-top: 32px;
+    }
     width: 374px;
     margin-left: 54px;
     margin-top: 36px;
     align-self: flex-end;
     padding-bottom: 12px;
     .preview-title {
+      @include mobile {
+        height: 28px;
+      }
       height: 40px;
       position: relative;
       z-index: 0;
       margin-bottom: 8px;
       .text-container {
+        @include mobile {
+          font-size: 28px;
+          line-height: 28px;
+        }
         position: absolute;
         font-weight: 900;
         font-size: 40px;
         line-height: 40px;
         color: $brand-primary;
         .accent {
+          @include mobile {
+            left: -4px;
+            bottom: 8px;
+            right: 10px;
+            top: -2px;
+          }
           position: absolute;
           left: -8px;
           bottom: 12px;
@@ -91,6 +113,10 @@ export default {
       }
     }
     .description {
+      @include mobile {
+        font-size: 14px;
+        line-height: 18px;
+      }
       font-weight: 400;
       font-size: 15px;
       line-height: 20px;

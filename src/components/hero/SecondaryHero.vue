@@ -55,40 +55,26 @@ export default {
 <style lang="scss" scoped>
 .secondary-hero {
   @include mobile {
-    // TODO:
-  }
-  @include laptop {
-    // TODO:
+    height: 120px;
   }
   width: 100%;
   height: 22.5vw;
   background-color: $hero;
 
-  .logo-mark {
-    padding-top: 1.38vw;
-    padding-left: 2.5vw;
-    font-style: normal;
-    text-align: left;
-    cursor: pointer;
-    .first-word {
-      color: $white;
-      font-weight: bold;
-      font-size: 1.667vw;
-    }
-    .last-word {
-      color: $brand-secondary;
-      font-weight: 900;
-      font-size: 3.88vw;
-      margin-top: -0.97vw;
-    }
-  }
-
   .hero-content {
+    @include mobile {
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-bottom: 8px;
+    }
     margin-left: 8.88vw;
     margin-bottom: 1.38vw;
     font-style: normal;
     text-align: left;
     .title {
+      @include mobile {
+        font-size: 44px;
+      }
       color: $brand-secondary;
       font-weight: 900;
       font-size: 6.944vw;

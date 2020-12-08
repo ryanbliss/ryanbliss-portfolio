@@ -59,6 +59,10 @@ export default {
     box-shadow: none !important;
   }
   .carousel-slide {
+    @include mobile {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
     padding-right: 72px;
     padding-left: 72px;
   }

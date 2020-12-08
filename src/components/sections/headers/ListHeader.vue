@@ -21,13 +21,22 @@ export default {
 
 <style lang="scss" scoped>
 .list-header {
+  @include mobile {
+    margin-top: 24px;
+  }
   margin-top: 36px;
   .accent {
+    @include mobile {
+      display: none;
+    }
     width: 8px;
     height: 28px;
     background-color: $brand-primary;
   }
   .title {
+    @include mobile {
+      margin-left: 0px;
+    }
     margin-top: 14px;
     margin-left: 24px;
     margin-bottom: 16px;

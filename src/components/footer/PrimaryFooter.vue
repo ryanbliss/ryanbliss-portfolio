@@ -77,7 +77,11 @@ export default {
 <style lang="scss" scoped>
 .primary-footer {
   @include mobile {
-    // TODO:
+    height: 356px;
+    padding-top: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 16px;
   }
   @include laptop {
     // TODO:
@@ -92,15 +96,26 @@ export default {
   background-color: $hero;
 
   .footer-title {
+    @include mobile {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
     color: $brand-secondary;
     font-weight: 900;
     font-size: 5vw;
     margin-bottom: 1.16vw;
   }
   .footer-links {
-    padding-left: 1.1vw;
+    @include mobile {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    padding-left: 12px;
   }
   .footer-copyright {
+    @include mobile {
+      font-size: 14px;
+    }
     font-size: 1.25vw;
     font-weight: 700;
     color: $gray3;

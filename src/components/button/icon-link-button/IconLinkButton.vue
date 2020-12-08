@@ -46,14 +46,26 @@ export default {
 
 <style lang="scss" scoped>
 .icon-link-button-container {
+  @include mobile {
+    margin-bottom: 12px;
+  }
   margin-bottom: 1.38vw;
   cursor: pointer;
   .icon {
+    @include mobile {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+    }
     width: 1.66vw;
     height: 1.66vw;
     margin-right: 12px;
   }
   .button-text {
+    @include mobile {
+      margin-top: 2px;
+      font-size: 18px;
+    }
     font-weight: 700;
     font-size: 1.25vw;
     color: $white;
